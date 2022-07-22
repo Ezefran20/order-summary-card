@@ -1,0 +1,176 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    /* Primary */
+
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+
+}
+.img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem 1rem 0rem 0rem;
+}
+ul{
+    list-style-type: none;
+}
+
+body{
+    height: 100vh;
+    margin: 1.25rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Red Hat Display';
+    font-size: 16px;
+    background: var(--Pale-blue);
+    
+    /*  */
+    background-image: url(../images/pattern-background-desktop.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.container{
+
+    max-width: 400px;
+    margin-top: 2rem;
+    box-shadow: 5px 20px 5px hsl(224, 23%, 55%, 5%);
+    margin-bottom: 2rem;
+    background: #fff;
+    border-radius: 1rem;
+}
+
+h1{
+    margin-top: 1.8rem;
+    margin-bottom: 1rem;
+    color: var(--Dark-blue);
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5rem;
+}
+p{
+    margin-bottom: 2rem;
+    text-align: center;
+    color: var(--Desaturated-blue);
+    margin-right: 2rem;
+    margin-left: 2rem;
+    line-height: 1.5rem;
+}
+/* Music price - falta por acomodar */
+
+
+.container .music{
+    width: 90%;
+    background: hsl(225, 100%, 94%, 25%);
+    margin: 1rem;
+    border-radius: 1rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container .music article{
+    padding: 1rem 0rem 1rem 0rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .music article img{
+    margin-right: 1rem;
+    width: 3.5rem;
+}
+.container .music article ul{
+    text-align: center;
+    margin-right: 6rem;
+    white-space: nowrap;
+}
+.container .music a{
+    color: var(--Bright-blue);
+    font-weight: 700; 
+}
+.container .music a:hover{
+    cursor: pointer;
+    color: hsl(245, 75%, 52%, 60%);
+}
+
+.container .music ul li:first-child{
+    color: var(--Dark-blue);
+    font-weight: 900;
+    
+}
+.container .music ul li:last-child{
+    color: var(--Desaturated-blue);
+    font-weight: 500;
+}
+
+
+/* end mp */
+
+.container .buttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+}
+
+.container .buttons button{
+    background: var(--Bright-blue);
+    color: var(--Very-pale-blue);
+    border: none;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 1.2rem;
+    width: 90%;
+    border-radius: .7rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 5px 20px 5px hsl(224, 23%, 55%, 10%);
+}
+.container .buttons button:hover{
+    cursor: pointer;
+    background: hsl(245, 75%, 52%, 60%);
+}
+.container .buttons a{
+    color: var(--Desaturated-blue);
+    text-decoration: none;
+    font-weight: 700;
+}
+.container .buttons a:hover{
+    color: var(--Dark-blue);
+}
+
+.attribution{
+    text-align: center;
+    line-height: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--Desaturated-blue);
+}
+.attribution a{
+    text-decoration: none;
+    color: var(--Dark-blue);
+}
+
+@media screen and (max-width:500px) {
+    body {
+        padding: 0;
+        background-image: url(../images/pattern-background-mobile.svg);
+    }
+    .container .music article ul{
+        margin-right: 2.5rem;
+    }
+
+}
